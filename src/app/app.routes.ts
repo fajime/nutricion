@@ -1,12 +1,9 @@
+import { HttpXsrfTokenExtractor } from '@angular/common/http';
 import { Routes } from '@angular/router';
 
+
+
 export const routes: Routes = [
-  {
-    path: 'home',
-    loadComponent() {
-      return import('./components/home/home.component').then((m) => m.HomeComponent);
-    },
-  },
   {
     path: 'servicios',
     loadComponent() {
@@ -21,7 +18,8 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
+    loadComponent() {
+      return import('./components/home/home.component').then((m) => m.HomeComponent);
+    },
   },
 ];

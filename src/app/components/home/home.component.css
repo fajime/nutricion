@@ -3,12 +3,12 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
-  background-image: linear-gradient(to right, #e5f4f5 10%, white, #e5f4f5);
   justify-content: center;
+  background-image: linear-gradient(to right, #084e63,#619da0 40%, #07929c);
 }
 
 img {
-  width: 50%;
+  width: 100%;
   height: 90%;
 }
 
@@ -63,11 +63,11 @@ p {
 }
 
 .titular {
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 2.5rem;
+  font-weight: 500;
   padding-left: 30px;
   padding-right: 30px;
-  color: #06637a;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -111,6 +111,11 @@ p {
     padding-right: 30px;
     font-size: 20px;
   }
+  .titular {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
 }
 
 

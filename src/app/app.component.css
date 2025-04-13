@@ -40,9 +40,6 @@ main {
   flex-direction: column;
 }
 
-.content {
-  padding-top: 20px;
-}
 
 .header {
   display: flex;
@@ -55,6 +52,8 @@ main {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 1535px;
+  border-bottom: solid #a7d6e2 8px;
 }
 
 .content-title {
@@ -72,7 +71,12 @@ main {
   justify-content: center;
   width: 50%;
   gap: 50px;
+  min-height: 130px;
+  align-items: center;
+}
 
+.content {
+  max-width: 1550px;
 }
 
 .active {
@@ -121,8 +125,6 @@ img {
   }
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .header {
     flex-direction: column;
@@ -159,6 +161,7 @@ img {
     padding-bottom: 10px;
     gap: 30px;
     background-color: aliceblue;
+    min-height: 60px;
   }
 
   .active {

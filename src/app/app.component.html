@@ -8,12 +8,9 @@
       </div>
     </div>
     <div class="content-links">
-      <a routerLink="/home" class="links" routerLinkActive="active">Sobre mi</a>
-      <a routerLink="/servicios" class="links" routerLinkActive="active">Servicios</a>
-      <a routerLink="/contacto" class="links" routerLinkActive="active">Contacto</a>
-      <!-- <button mat-mini-fab aria-label="Example icon button with a menu icon">
-        <mat-icon>menu</mat-icon>
-      </button> -->
+      <a routerLink="/" class="links" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Sobre mi</a>
+      <a routerLink="/servicios" class="links" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Servicios</a>
+      <a routerLink="/contacto" class="links" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Contacto</a>
     </div>
   </div>
   <div class="content">
